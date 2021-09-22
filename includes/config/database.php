@@ -1,14 +1,8 @@
 <?php
 
-$url = '';
-$user = '';
-$pass = '';
-$name_db = '';
-
-
 function conectarDB(): mysqli
 {
-    $db = mysqli_connect('localhost', 'root', 'root', 'bienes_raices');
+    $db = mysqli_connect('us-cdbr-east-04.cleardb.com', 'bab183f15ffced', '5f654c06', 'heroku_f27c8fd068ba326');
     $db->set_charset("utf8");
 
     if (!$db) {
